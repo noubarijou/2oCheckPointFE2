@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/256fb4a9c2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/1560.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>To Do - List</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="titulo">To-do List</h1>
+            <button id="linkApi"><a href="api.html">Site API</a></button>
+        </nav>
+    </header>
+    <main>
+        <div class="criar-tarefa">
+            <div>
+                <label for="tarefa">Tarefa:</label>
+                <input type="tel" size="20" maxlength="12" name="tarefa" id="tarefa">
+                <small id="erroUm"></small>
+            </div>
+            <div>
+                <div>
+                    <label for="data-criacao">Data de criação:</label>
+                    <input type="date" name="data-criacao" id="data-criacao" disabled>
+                </div>
+                <div>
+                    <label for="data-final">Data final:</label>
+                    <input type="date" name="data-final" id="data-final">
+                    <small id="erroDois"></small>
+                </div>
+            </div>
+            <button id="btn-add"><i class="fas fa-plus fa-sm"></i></button>
+        </div>
+
+        <div class="todo-list">
+            <div class="todo" id="todo"></div>
+
+            <div class="todo" id="completed"></div>
+        </div>
+    </main>
+    <footer>
+        NENHUM DIREITO RESERVADO %$#@%$#¨%$&%¨&¨$# ROUBE À VONTADE
+    </footer>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

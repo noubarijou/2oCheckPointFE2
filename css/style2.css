@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#pronto .card{
+    border: 1px solid #000;
+    border-radius: 0px;
+    background-color: rgb(53, 241, 116);
+    padding: 10px 10px;
+    margin: 15px 0;
+    height: 150px;
+    width: 450px;
+    text-align: left;
+
+}
+
+
+body {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+#naumPronto .card{
+    border: 1px solid #000;
+    border-radius: 0px;
+    background-color: rgb(127, 204, 255);
+    padding: 10px 10px;
+    margin: 15px 0;
+    height: 150px;
+    width: 450px;
+    text-align: left;
+}
+
+.card h4{
+    margin: 0.2rem 0;
+    padding: 10px 0;
+}
+
+.card h5 {
+    margin: 0.1rem 0;
+    padding: 10px 0;
+}
+
+
+
+#naumPronto .card h4 {
+    font-size: 1.1em;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+#pronto .card h4 {
+    text-decoration: line-through;
+}
+
+
+@media (max-width: 768px) {
+    #pronto .card{
+        border: 1px solid #000;
+        border-radius: 0;
+        background-color: rgb(53, 241, 116);
+        padding: 5px;
+        margin: 10px 0;
+        height: 100px;
+        width: 350px;
+        text-align: left;
+        font-size: 0.9rem;
+    
+    }
+    #naumPronto .card{
+        border: 1px solid #000;
+        border-radius: 0px;
+        background-color: rgb(127, 204, 255);
+        padding: 5px;
+        margin: 5px 0;
+        height: 100px;
+        width: 350px;
+        text-align: left;
+        font-size: 0.8rem;
+    }
+
+    .card h4{
+        margin: 5px 0;
+        padding: 3px 0;
+    }
+    
+    .card h5 {
+        margin: 5px 0;
+        padding: 3px 0;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card h4{
+        margin: 2px 0;
+        padding: 1px 0;
+    }
+    
+    .card h5 {
+        margin: 2px 0;
+        padding: 1px 0;
+    }
+
+    #naumPronto .card {
+        margin: 0;
+        padding: 0;
+        height: 100px;
+        width: 200px;
+
+    }
+    #pronto .card{
+        margin: 0;
+        padding: 0;
+        height: 100px;
+        width: 200px;
+    }
+
+    /* button #voltar {
+        
+    } */
+}

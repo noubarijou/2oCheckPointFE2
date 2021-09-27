@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 0.8rem;
+}
+
+nav {
+    display: flex;
+    
+}
+
+header #linkApi {
+    margin-left: auto;
+    
+}
+
+header #titulo  {
+    justify-self: center;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%);
+}
+
+.criar-tarefa {
+    display: grid;
+    margin: 1rem 1rem 0;
+    padding: 0.3rem;
+}
+
+.todo-list {
+    margin: 0.5rem;
+}
+.todo-list h3 {
+    word-break: break-all;
+}
+
+.todo-list #todo .buttons .completar i:first-child {
+    color: #ccc;
+}
+
+
+
+.todo-list #todo .buttons .completar i:first-child {
+    color: #f55;
+}
+
+.todo-list #completed .buttons .completar i:first-child {
+    color: #5f5;
+}
+.todo {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin: 1rem 1rem;
+}
+
+.to-do-div {
+    border: 1px solid #000;
+    margin: 0.5rem;
+    padding: 0.2rem;
+}
+span {
+    display: flex;
+    margin: 0.5rem 0;
+}
+    
+
+button a{
+    height: 80px;
+    width: 90px;
+    
+}
+#btn-add {
+    width: 25px;
+
+}
+
+footer {
+    padding: 15px;
+    background-color: #ccc;
+    text-align: center;
+    bottom: 2%;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    header #titulo  {
+        margin-right: 300px;
+    }
+
+
+}
+
+@media (max-width: 425px) {
+header #titulo  {
+        margin-right: 100px;
+    }
+    .todo {
+        display: grid;
+        grid-template-columns: repeat(3, 35%);
+        margin: 0;
+    }   
+}
