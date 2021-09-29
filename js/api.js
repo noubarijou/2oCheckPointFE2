@@ -1,8 +1,9 @@
+//define as variaveis a ser usadas com valores do dom
 const pronto = document.querySelector('#pronto');
 const naumPronto = document.querySelector('#naumPronto');
 const voltar = document.querySelector('#voltar');
 
-
+//função pega os valores puxados da api e as imprime na tela formatados
 
 const mostrarDados = (result) => {
     for (const campo in result) {
@@ -24,7 +25,7 @@ const mostrarDados = (result) => {
 } 
 
 
-
+//funcao acessa a api e puxa os dados necessarios
 function carregarApi(){
     const options = {
         method: 'GET',
@@ -38,7 +39,7 @@ function carregarApi(){
         .catch(e => console.error('Deu erro mano! ' + e, message))
 }
 
-
+//event listener do botao pra voltar a pagina inicial
 voltar.addEventListener('click', (e) => {
     window.location.href = 'index.html';
 })
