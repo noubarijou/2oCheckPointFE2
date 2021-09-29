@@ -20,6 +20,9 @@ header #linkApi {
     margin-left: auto;
     
 }
+header #linkTaskList {
+    margin: auto
+}
 
 header #titulo  {
     justify-self: center;
@@ -71,10 +74,14 @@ span {
 }
     
 
-button a{
+button #linkApi a{
     height: 80px;
     width: 90px;
     
+}
+button #linkTaskList a{
+    height: 80px;
+    width: 90px;
 }
 #btn-add {
     width: 25px;
