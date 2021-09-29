@@ -52,6 +52,7 @@ function getTasks() {
 function addTask(e) {
     if(taskInput.value === '') {
         alert('Please add a task');
+        return;
     }
 
     //criar li
